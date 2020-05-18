@@ -1,5 +1,11 @@
 #!/bin/bash 
 
+######## Ensure to allow follow urlparam.
+### $ cat ~/.aws/config 
+###   [default]
+###   cli_follow_urlparam = false
+#######
+
 export SSM_PS_NP="/foo/uat/bar"
 
 function get_param() {
