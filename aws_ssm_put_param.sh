@@ -7,13 +7,12 @@
 #######
 
 
-export KMS_KEY_ID="kms_key_id"
-export SSM_PS_NP="/foo/uat/bar"
+export KMS_KEY_ID="7795b9c6-beaa-4af3-adxxxxx"
+export SSM_PS_NP="/happay/uat/pci-vpc"
 
 function get_param() {
 cat > put_param.txt <<EOF
-Foo=Bar
-Alias=Cty
+
 EOF
 }
 
@@ -47,6 +46,6 @@ while IFS== read -r KEY VALUE; do
 done < "put_param_encrypted.txt"
 }
 get_param
-get_param_encrypted
+#get_param_encrypted
 put_param
-put_param_encrypted
+#put_param_encrypted

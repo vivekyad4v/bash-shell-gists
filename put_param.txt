@@ -1,0 +1,5 @@
+vpc_cidr=10.152.0.0/18
+private_subnet_cidr_1=10.152.8.0/21
+private_subnet_cidr_2=10.152.16.0/21
+public_subnet_cidr_1=10.152.24.0/22
+public_subnet_cidr_2=10.152.28.0/22
